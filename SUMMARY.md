@@ -1,5 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
-* [Test](test/README.md)
-  * [Test2](test/test2.md)
+* [Welcome](README.md)
+* [Python](python.md)
+* [Object and Data Structures](object-and-data-structures.md)
+
