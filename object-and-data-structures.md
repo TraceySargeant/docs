@@ -163,6 +163,98 @@ Strings are sequences of characters, using the syntax of either single quotes or
 * "hello"
 * "I don't do that"
 
+### Basics
+
+* Strings are **ordered sequences**, so we can use **indexing** and **slicing** to grab sub-sections of the srting.
+* Indexing notation uses `[]` notation after the string \(or variable assigned to the string\).
+* Indexing allows you to grab a single character from the string...
+* These actions use `[]` square brackets and a number index to indicate positions of waht you wish to grab. 
+  * **Character: h e l l o** 
+  * **Index: 0 1 2 3 4**
+  * **Reverse indexing: 0 -4 -3 -2 -1**
+* Slicing allows you to grab a subsection of multiple characters, a "slice" of the string.
+* This has the following syntax:
+  * **\[start:stop;step\]**
+* **start** is a numerical index for the slice start 
+* **stop** is the index you will go up to \(but not include\)
+* **step** is the size of the "jump" you take
+
+#### Examples of strings
+
+```python
+"hello"
+'helo'
+
+# a space is equal to a character
+'this is also a string'
+
+# enclose in doubles if you have a single etc
+"I'm going on a run"
+
+print("hello")
+hello
+
+#print escaping a new line \
+# n = new line 
+print('hello /nworld')
+
+#pring escaping a tab
+print('hello /tworld')
+
+#cheing the length of a string
+len('hello')
+
+#notice that the space counts
+len('I am')
+```
+
+### Indexing and slicing with strings
+
+#### Indexing example
+
+```python
+mystring = "Hello World"
+#grab the H from Hello
+mystring[0]
+
+#grab the l from world
+mystring[-2]
+```
+
+#### Slicing example
+
+```python
+mystring = 'abcdefghijk'
+
+#slice from 3rd character to end (stop and step undefined)
+mystring[2:]
+
+#slice up to 4th character from beginning (start and step undefined)
+mystring[:3]
+
+# slice 4th and 6th charater
+mystring[3:6]
+'def'
+#slice 1st and 3rd character
+'bc'
+
+#slice the string as a whole, valid syntax
+mystring[::]
+
+#slice in jumps of 2
+mystring[::2]
+
+#slice with start, stop and stem
+#slice 3rd char up until 8th char (not including) in steps of 2
+mystring[2:7:2]
+'ceg'
+
+#reverse the order of the text
+mystring[::-1]
+```
+
+### String Properties and Methods
+
 ## Print Formatting with Strings
 
 ## Lists
